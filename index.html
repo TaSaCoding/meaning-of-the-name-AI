@@ -7,34 +7,37 @@
     <title>AI Name-Meaning Generator</title>
   </head>
   <body>
-    <header>
-      <h1>What's the meaning of my name?</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter a Name"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>the definition</div>
-    </main>
-    <footer>
-      This AI project was coded by Tanja Sauer and is open-soured on
-      <a
-        href="https://github.com/TaSaCoding/meaning-of-the-name-AI.git"
-        target="_blank"
-        >GitHub</a
-      >
-      and hosted on
-      <a href="https://tsd-ai-name-meaning.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+    <div class="container">
+      <header>
+        <h1>What's the meaning of my name?</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter a Name"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submitButton" />
+        </form>
+        <div class="definition">the definition</div>
+      </main>
+      <footer>
+        This AI project was coded by Tanja Sauer and is open-soured on
+        <a
+          href="https://github.com/TaSaCoding/meaning-of-the-name-AI.git"
+          target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://tsd-ai-name-meaning.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
