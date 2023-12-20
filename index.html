@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/index.css" />
     <title>AI Name-Meaning Generator</title>
   </head>
@@ -12,10 +13,10 @@
         <h1>What's the meaning of my name?</h1>
       </header>
       <main>
-        <form>
+        <form id="name-generator">
           <input
             type="text"
-            placeholder="Enter a Name"
+            placeholder="Enter a Name..."
             autofocus
             required
             autocomplete="off"
@@ -23,7 +24,7 @@
           />
           <input type="submit" class="submitButton" />
         </form>
-        <div class="definition">the definition</div>
+        <div class="definition" id="name-definition"></div>
       </main>
       <footer>
         This AI project was coded by Tanja Sauer and is open-soured on
