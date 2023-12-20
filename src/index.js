@@ -16,6 +16,9 @@ function generateName(event) {
     "You are an expert in Names. You know all meanings and the Definition of all names. Make sure to follow the user instructions and give a short explanation. Sign the Definition with <br/> 'SheCodes AI' inside a <em> element at the end of the Definition.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let meaningElement = document.querySelector("#name-definition");
+  meaningElement.classList.remove("hidden");
+  meaningElement.innerHTML = `<div class="loader"></div>`;
   axios.get(apiUrl).then(displayDefinition);
 }
 
